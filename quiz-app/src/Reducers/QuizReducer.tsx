@@ -5,7 +5,7 @@ export type Action =
   | { type: "RESET" }
   | {
       type: "INCREMENT";
-      payload: { score: number; answer: number; id: number; quizId: string };
+      payload: { score: number; answer: number; id: number; quizId: string | undefined };
     }
   | { type: "DECREMENT"; payload: { negativeScore: number } };
 

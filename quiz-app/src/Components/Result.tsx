@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 
 export function Result() {
   const { state, dispatch } = useQuiz();
-  // const { quizId } = useParams();
+  
   return (
     <>
       <p className="text-3xl">Guest, Your Score is {state.score}</p>

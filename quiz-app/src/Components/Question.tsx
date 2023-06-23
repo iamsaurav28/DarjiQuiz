@@ -3,9 +3,9 @@ import Options from "./Options";
 import { useState } from "react";
 import { Result } from "./Result"
 import "../Color/tailwind.css"
-
 import { useParams } from "react-router-dom";
 import { useQuiz } from "../Context/QuizProvider";
+
 
 export default function QuestionComponent() {
   const { state, dispatch } = useQuiz();

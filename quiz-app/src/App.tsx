@@ -3,6 +3,7 @@ import * as React from "react";
 import Question from "./Components/Question";
 import { Home } from "./Components/Home";
 import { Route, Routes } from "react-router-dom";
+import Rules from "./Components/Rules";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz/:quizId" element={<Question />} />
+        <Route path="rules" element={<Rules />} />
       </Routes>
     </div>
   );

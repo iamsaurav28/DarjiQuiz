@@ -4,7 +4,7 @@ import { Option } from "../Data/QuizType";
 import "../Color/tailwind.css";
 
 type OptionsProps = {
-  quizId: string;
+  quizId: string | undefined;
   question_no: number;
   options: Option[];
 };

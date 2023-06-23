@@ -1,15 +1,16 @@
 
-
-
 import { Quiz } from "./QuizType";
 // answer: null
 const quizOne: Quiz = {
+  
+
   id: 1,
   quizName: "SHARARAT Thoda jadu Thodi Nazakat",
   description:
       "lets begin with a quiz of our childhood magic show",
   image: "https://upload.wikimedia.org/wikipedia/en/a/a1/Shararathh.jpg",
   questions: [
+  
     {
       question:
         "what they speak before doing magic?",

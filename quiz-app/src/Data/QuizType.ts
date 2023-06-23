@@ -19,3 +19,7 @@ export type Quiz = {
   image: string;
   questions: Question[];
 };
+
+export type Rule ={
+  note:string;
+}

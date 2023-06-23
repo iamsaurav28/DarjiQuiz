@@ -1,7 +1,8 @@
 import * as React from "react";
 import "../Color/tailwind.css";
 import { useQuiz } from "../Context/QuizProvider";
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+import Rules from "./Rules";
 
 export function Home() {
   const { state } = useQuiz();
@@ -18,8 +19,11 @@ export function Home() {
                   {quiz.quizName}
                 </h5>
                 <p>{quiz.description}</p>
+              
+
                 <Link to={`/quiz/${quiz.id}`}>
                   <button className="bg-purple-700 hover:bg-purple-500 text-white px-4 py-2 inline-block mt-4 rounded content-center">
+                    
                     Start
                   </button>
                 </Link>
@@ -31,3 +35,5 @@ export function Home() {
     </div>
   );
 }
+
+

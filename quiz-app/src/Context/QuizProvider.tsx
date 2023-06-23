@@ -18,6 +18,8 @@ export type InitialState = {
 
 
 
+
+
 type QuizProviderProps = {
   children: React.ReactNode;
 };
@@ -51,3 +53,7 @@ export function QuizProvider({ children }: QuizProviderProps) {
 export function useQuiz() {
   return useContext(QuizContext);
 }
+
+
+
+
